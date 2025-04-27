@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import { getMovieDetail } from '../../store/movie';
+import CButton from '../../components/CButton';
+import CLoader from '../../components/CLoader';
 import styles from './styles.module.scss';
 
 export default function Detail() {
@@ -16,6 +18,9 @@ export default function Detail() {
 
   return (
     <>
+      <Link to={`/}`}>
+        <CButton type="dark" text="← Geri Dön" />
+      </Link>
       {isLoading ? (
         <CLoader />
       ) : (
