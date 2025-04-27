@@ -1,0 +1,20 @@
+.c-detail {
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+
+    strong,
+    p {
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+}
