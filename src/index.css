@@ -14,3 +14,9 @@ code {
 .app {
   margin: 100px 200px;
 }
+
+@media only screen and (max-width: 992px) {
+  .app {
+    margin: 50px 20px;
+  }
+}

@@ -17,4 +17,12 @@
       margin: 0;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    &__row {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
 }
